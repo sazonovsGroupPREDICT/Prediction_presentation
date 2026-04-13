@@ -48,7 +48,15 @@ layout: two-cols
 
 </div>
 
+
 ---
+
+<div class="absolute inset-0 w-full h-full p-0 m-0 overflow-hidden">
+  <iframe src="https://ibdscreen.org/trial" class="w-[155%] h-[155%] border-none origin-top-left scale-[0.65]" title="IBDScreen"></iframe>
+</div>
+
+---
+
 # Prevention trials: screen and pick those at high risk?
 
 <div class="w-full h-[430px] mt-6">
@@ -56,33 +64,43 @@ layout: two-cols
 </div>
 
 ---
-layout: center
-class: text-center
----
 
-<h1 class="text-6xl tracking-tight text-slate-800 drop-shadow-sm leading-tight">
-  Prevention trials are unrealistic with<br/>
-  low intervention efficacy
-</h1>
+# Take Aways for trial design
 
----
-<div class="absolute inset-0 w-full h-full p-0 m-0 overflow-hidden">
-  <iframe src="https://ibdscreen.org/trial.html" class="w-[155%] h-[155%] border-none origin-top-left scale-[0.65]" title="IBDScreen Trial"></iframe>
+<div class="mt-8 text-lg">
+
+- **For a sufficiently well powered trial:**
+  - Effacious interventions
+  - Great predictor
+  - Risk stratification
+  
+
+
+
 </div>
+
+
+
 
 ---
 # A Potential Solution: Hierarchical Profiling
+---
+
 
 <div class="w-full h-[450px] mt-2">
   <HierarchicalPrediction />
 </div>
 
+
 ---
+
 <div class="absolute inset-0 w-full h-full p-0 m-0 overflow-hidden">
   <iframe src="https://ibdscreen.org/" class="w-[155%] h-[155%] border-none origin-top-left scale-[0.65]" title="IBDScreen"></iframe>
 </div>
 
 ---
+
+
 # Future Work
 
 <div class="mt-8 text-lg">
@@ -99,6 +117,8 @@ class: text-center
   - Important for FDRs
 
 </div>
+
+
 
 ---
 # Acknowledgements
