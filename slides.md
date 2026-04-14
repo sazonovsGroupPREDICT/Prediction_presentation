@@ -21,6 +21,8 @@ Michelle Sollok and Aleksejs Sazonovs
 
 *PREDICT, Aalborg University Copenhagen*
 
+<img src="/CherryPrimary.svg" class="w-1/4 absolute bottom-8 right-8" alt="Cherry Primary">
+
 ---
 layout: two-cols
 ---
@@ -75,8 +77,7 @@ layout: two-cols
   - Great predictor
   - Sufficient sample size
   
-We are aiming for a 2-arm trial with 80% power and target p-value $\alpha=0.05$
-
+We are aiming for a 2-arm trial with 80\% power and target p-value $\alpha$=0.05
 
 
 </div>
@@ -88,6 +89,8 @@ We are aiming for a 2-arm trial with 80% power and target p-value $\alpha=0.05$
 - Predicting IBD in top-risk FDRs doesn't capture 95% of cases
 - Will never refer every high-CRP individual to colonoscopy
 - Predict IBD in the general population using a hierarchical testing approach
+
+
 
 ---
 
@@ -136,8 +139,10 @@ Thank you to collaborators on the project, members of the Sazonovs lab and other
 - J.F. Colombel
 - T. Jess
 
-<div class="mt-20 text-center text-6xl font-extrabold tracking-tight text-blue-300">
-  <a href="https://ibdscreen.org/" target="_blank">ibdscreen.org</a>
+<div class="mt-10 text-center">
+  <div class="inline-block border-b-8 border-blue-300 pb-2">
+    <a href="https://ibdscreen.org/" target="_blank" class="text-6xl font-extrabold tracking-tight text-blue-300 !border-none">ibdscreen.org</a>
+  </div>
 </div>
 
 
