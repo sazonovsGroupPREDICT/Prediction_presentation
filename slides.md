@@ -90,8 +90,6 @@ We are aiming for a 2-arm trial with 80\% power and target p-value $\alpha$=0.05
 - Will never refer every high-CRP individual to colonoscopy
 - Predict IBD in the general population using a hierarchical testing approach
 
-
-
 ---
 
 # A Potential Solution: Hierarchical Profiling
