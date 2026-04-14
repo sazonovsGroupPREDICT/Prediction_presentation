@@ -1,0 +1,16 @@
+{
+  "name": "prediction-presentation",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.47.0",
+    "@slidev/theme-default": "^0.21.2",
+    "chart.js": "^4.5.1",
+    "chartjs-plugin-datalabels": "^2.2.0",
+    "vue-chartjs": "^5.3.3"
+  }
+}

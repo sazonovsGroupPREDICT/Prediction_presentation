@@ -48,13 +48,6 @@ layout: two-cols
 
 </div>
 
-
----
-
-<div class="absolute inset-0 w-full h-full p-0 m-0 overflow-hidden">
-  <iframe src="https://ibdscreen.org/trial" class="w-[155%] h-[155%] border-none origin-top-left scale-[0.65]" title="IBDScreen"></iframe>
-</div>
-
 ---
 
 # Prevention trials: screen and pick those at high risk?
@@ -65,26 +58,40 @@ layout: two-cols
 
 ---
 
-# Take Aways for trial design
+<div class="absolute inset-0 w-full h-full p-0 m-0 overflow-hidden">
+  <iframe src="https://ibdscreen.org/trial" class="w-[155%] h-[155%] border-none origin-top-left scale-[0.65]" title="IBDScreen"></iframe>
+</div>
+
+
+
+---
+
+# Trial design trifecta
 
 <div class="mt-8 text-lg">
 
-- **For a sufficiently well powered trial:**
+**Non-negotiables:**
   - Effacious interventions
   - Great predictor
-  - Risk stratification
+  - Sufficient sample size
   
+We are aiming for a 2-arm trial with 80% power and target p-value $\alpha=0.05$
 
 
 
 </div>
 
 
+---
 
+# What comes after trials?
+- Predicting IBD in top-risk FDRs doesn't capture 95% of cases
+- Will never refer every high-CRP individual to colonoscopy
+- Predict IBD in the general population using a hierarchical testing approach
 
 ---
+
 # A Potential Solution: Hierarchical Profiling
----
 
 
 <div class="w-full h-[450px] mt-2">
@@ -118,9 +125,8 @@ layout: two-cols
 
 </div>
 
-
-
 ---
+
 # Acknowledgements
 
 Thank you to collaborators on the project, members of the Sazonovs lab and other PREDICT associates.
@@ -133,3 +139,46 @@ Thank you to collaborators on the project, members of the Sazonovs lab and other
 <div class="mt-20 text-center text-6xl font-extrabold tracking-tight text-blue-300">
   <a href="https://ibdscreen.org/" target="_blank">ibdscreen.org</a>
 </div>
+
+
+---
+
+
+## Supplementary - sample size
+
+Calculating the required sample size (n) per arm for a two-arm trial comparing a control proportion $(p_C)$ to a treatment proportion $(p_T)$ with a two-sided z-test $\alpha$ at significance level α and power $1-\beta$.
+
+
+With a two-sided z-test at significance level α and power 1−β. 
+
+$H_0 : p_T = p_C$, 
+$H_1 : p_T \neq p_C$
+
+‘The z test formula compares the z statistic with the z critical value to test whether there is a difference in the means of two sample populations’
+
+---
+
+## Supplementary - sample size
+We find the sample size n by:
+$$
+n = \frac{
+\left(
+z_{1-\alpha/2} \sqrt{2\bar{p}(1-\bar{p})}
++
+z_{1-\beta} \sqrt{p_C(1-p_C) + p_T(1-p_T)}
+\right)^2
+}{
+(p_C - p_T)^2
+}
+$$
+
+
+
+Where the treated arm depends on the baseline subgroup risk $p_{\text{base}}$ and the efficacy $E \in [0,1]$
+$$
+p_T = p_{\text{base}} (1 - E)
+$$
+
+
+
+
