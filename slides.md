@@ -144,6 +144,12 @@ Thank you to collaborators on the project, members of the Sazonovs lab and other
 </div>
 
 
+
+<img src="/CherryPrimary.svg" class="w-1/6 absolute bottom-8 right-8" alt="Cherry Primary">
+<img src="/__AAU_LEFT_RGB_UK.png" class="w-1/6 absolute bottom-22 right-8" alt="AAU">
+
+
+
 ---
 
 
@@ -184,4 +190,11 @@ $$
 
 
 
+---
+layout: full
+---
+
+<div class="w-full h-full flex items-center justify-center">
+  <img src="/poster.jpg" class="max-h-full max-w-full object-contain" alt="Poster">
+</div>
 
