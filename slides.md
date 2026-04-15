@@ -68,16 +68,14 @@ layout: two-cols
 
 ---
 
-# Trial design trifecta
+# Trial design trifecta - the non-negotiables
 
 <div class="mt-8 text-lg">
 
-**Non-negotiables:**
   - Effacious interventions
   - Great predictor
   - Sufficient sample size
-  
-We are aiming for a 2-arm trial with 80\% power and target p-value $\alpha$=0.05
+
 
 
 </div>
@@ -86,8 +84,8 @@ We are aiming for a 2-arm trial with 80\% power and target p-value $\alpha$=0.05
 ---
 
 # What comes after trials?
-- Predicting IBD in top-risk FDRs doesn't capture 95% of cases
-- Will never refer every high-CRP individual to colonoscopy
+- Predicting IBD in top-risk FDRs doesn't capture 95%+ of cases
+- Will never refer every above-average CRP individual to colonoscopy
 - Predict IBD in the general population using a hierarchical testing approach
 
 ---
@@ -160,15 +158,33 @@ Calculating the required sample size (n) per arm for a two-arm trial comparing a
 
 With a two-sided z-test at significance level α and power 1−β. 
 
-$H_0 : p_T = p_C$, 
-$H_1 : p_T \neq p_C$
+$$
+H_0 : p_T = p_C, 
+H_1 : p_T \neq p_C
+$$
 
 ‘The z test formula compares the z statistic with the z critical value to test whether there is a difference in the means of two sample populations’
+
+
+$$
+Z = \frac{\hat{p}_T - \hat{p}_C}
+{\sqrt{\frac{p_C(1 - p_C) + p_T(1 - p_T)}{n}}}
+\sim \mathcal{N}(0,1) \quad \text{under } H_0
+$$
+
+Decision threshold
+$$
+|Z| > z_{1 - \alpha/2}
+\;\Rightarrow\; \text{Reject } H_0
+$$
+
+<img src="/z_stat.png" class="w-1/4 absolute bottom-8 right-8" alt="Cherry Primary">
 
 ---
 
 ## Supplementary - sample size
 We find the sample size n by:
+<br><br>
 $$
 n = \frac{
 \left(
@@ -182,8 +198,9 @@ z_{1-\beta} \sqrt{p_C(1-p_C) + p_T(1-p_T)}
 $$
 
 
-
-Where the treated arm depends on the baseline subgroup risk $p_{\text{base}}$ and the efficacy $E \in [0,1]$
+<br><br>
+Where the treated arm depends on the baseline subgroup risk $(p_{\text{base}})$ and the efficacy $E \in [0,1]$
+<br><br>
 $$
 p_T = p_{\text{base}} (1 - E)
 $$
@@ -192,9 +209,10 @@ $$
 
 ---
 layout: full
+class: p-0 m-0
 ---
 
-<div class="w-full h-full flex items-center justify-center">
-  <img src="/poster.jpg" class="max-h-full max-w-full object-contain" alt="Poster">
+<div class="absolute inset-0 w-full h-full flex items-center justify-center p-0 m-0">
+  <img src="/CD_predict_poster.jpg" class="w-full h-full object-contain" alt="Poster">
 </div>
 
